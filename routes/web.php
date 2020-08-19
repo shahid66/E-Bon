@@ -22,3 +22,21 @@ Route::get('/a', function () {
 Route::get('/b', function () {
     return view('usersView/profile');
 });
+Route::get('/admin', function () {
+    return view('adminView/index');
+});
+Route::get('/product', function () {
+    return view('adminView/product/index');
+});
+Route::get('/product/create', function () {
+    return view('adminView/product/create');
+});
+Route::get('/product/show', function () {
+    return view('adminView/product/show');
+});
+Route::get('/category', function () {
+    return view('adminView/category/index');
+});
+Route::get('/category/create', function () {
+    return view('adminView/category/create');
+});

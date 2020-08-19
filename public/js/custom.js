@@ -131,7 +131,7 @@ addBagBtn.forEach(function (button) {
   }); // button.addEventListener('click',(event)=>{
   // })
 });
-alert('h');
+
 
 /***/ }),
 

@@ -40,3 +40,6 @@ Route::get('/category', function () {
 Route::get('/category/create', function () {
     return view('adminView/category/create');
 });
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');

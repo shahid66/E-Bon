@@ -1,4 +1,4 @@
-@extends('usersView/layout/layout')
+@extends('users/layout/layout')
 @section('content')
 
 <section id="orderListPart">

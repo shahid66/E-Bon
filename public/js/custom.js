@@ -132,8 +132,46 @@ addBagBtn.forEach(function (button) {
   // })
 });
 
+const addBtn = document.getElementById('addBtn');
+const addBtn2=document.getElementById('addBtn2');
+addBtn.addEventListener('click',()=>{
+addBtn.style.display="none";
+addBtn2.style.display="block";
+const productInput = document.getElementById('case-count');
+productInput.value=1;
+});
 
-/***/ }),
+
+const plus=document.getElementById('plus');
+const minus=document.getElementById('minus');
+plus.addEventListener('click',function(){
+  handelProduct(true);
+});
+minus.addEventListener('click',function(){
+  handelProduct(false);
+});
+
+function handelProduct(isIncrease){
+  const productInput = document.getElementById('case-count');
+  const productCount = parseInt(productInput.value);
+  let productNewCount = productCount;
+  if (isIncrease == true) {
+     productNewCount = productCount + 1;
+  }
+  if (isIncrease == false && productCount > 0) {
+     productNewCount = productCount - 1;
+  }
+  productInput.value = productNewCount;
+  if(productNewCount<1){
+    addBtn.style.display="block";
+addBtn2.style.display="none";
+  }
+}
+    
+
+}),
+
+
 
 /***/ 1:
 /*!**************************************!*\
@@ -142,7 +180,7 @@ addBagBtn.forEach(function (button) {
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! C:\xampp\htdocs\E_Commerce2\e-Bon\resources\js\custom.js */"./resources/js/custom.js");
+module.exports = __webpack_require__(/*! C:\xampp\htdocs\E_Bon\E-Bon\resources\js\custom.js */"./resources/js/custom.js");
 
 
 /***/ })

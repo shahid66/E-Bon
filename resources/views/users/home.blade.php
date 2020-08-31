@@ -6,12 +6,14 @@
         <h2>our products</h2>
     </div>
     <div class="products-center">
+
+    @foreach($rows as $row)
         <!-- single product -->
         <div class="product-centerItem">
             <div class="image__content">
                 <img class="image__img " data-toggle="modal" data-target=".bd-example-modal-lg" src="{{asset('images/bird-1.jpg')}}" alt="">
                 <div class="details pt-4">
-                    <h2>name</h2>
+                    <h2>{{$row->name}}</h2>
                     <h3>price</h3>
                 </div>
 
@@ -21,13 +23,13 @@
             <div id="addBtn2" class="addButton">
                 <button id="minus" class="minus"><i class="fa fa-minus" aria-hidden="true"></i>
                 </button>
-                <input id="case-count" type="text" class="inputField " value="1" disabled> 
+                <input id="case-count" type="text" class="inputField " value="1" disabled>
                 <div class="textContent">in bag</div>
                 <button id="plus"  class="plus"><i class="fa fa-plus" aria-hidden="true"></i>
                 </button>
             </div>
         </div>
-        <!-- end single product -->
+    @endforeach
 
 
 
@@ -59,7 +61,7 @@
                                         <div id="itemDetailsBtn" class="itemDetailsBtn">
                                             <button id="minus" class="minus"><i class="fa fa-minus" aria-hidden="true"></i>
                                             </button>
-                                            <input id="case-count" type="text" class="itemInputF" value="1" disabled> 
+                                            <input id="case-count" type="text" class="itemInputF" value="1" disabled>
                                             <div class="itemDetailsText">in bag</div>
                                             <button id="plus"  class="plus "><i class="fa fa-plus" aria-hidden="true"></i>
                                             </button>

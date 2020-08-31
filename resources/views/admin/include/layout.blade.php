@@ -1,7 +1,7 @@
-@include('adminView/include/header')
-@include('adminView/include/navBar')
+@include('admin/include/header')
+@include('admin/include/navBar')
 
 
 @yield('content')
 
-@include('adminView/include/footer')
+@include('admin/include/footer')

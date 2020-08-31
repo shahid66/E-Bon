@@ -33,20 +33,20 @@
                                 </div>
                               </fieldset>
                           <fieldset class="pr-3 pl-3">
-                            <label for="exampleInputEmail1">Email address</label>
+                            <label for="exampleInputEmail1">Name</label>
                             <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
                             
                           </fieldset>
                           <div class="number-section d-flex justify-content-between">
                               <fieldset class="group">
                                 
-                                    <label for="exampleInputPassword1">Password</label>
+                                    <label for="exampleInputPassword1">Phone</label>
                                     <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
                                   
                               </fieldset>
                               <fieldset class="group">
                                 
-                                <label for="exampleInputPassword1">Password</label>
+                                <label for="exampleInputPassword1">Phone</label>
                                 <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
                               
                           </fieldset>
@@ -54,7 +54,7 @@
                           <div class="country-section d-flex justify-content-between">
                             <fieldset class="group">
                               
-                                <label  for="inlineFormCustomSelect">Preference</label>
+                                <label  for="inlineFormCustomSelect">Country</label>
                                 <select class="custom-select " id="inlineFormCustomSelect">
                                   <option selected>Choose...</option>
                                   <option value="1">One</option>
@@ -65,7 +65,7 @@
                             </fieldset>
                             <fieldset class="group">
                               
-                                <label  for="inlineFormCustomSelect">Preference</label>
+                                <label  for="inlineFormCustomSelect">City</label>
                                 <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
                                   <option selected>Choose...</option>
                                   <option value="1">One</option>
@@ -79,7 +79,7 @@
                         <div class="area-section d-flex justify-content-between">
                             <fieldset class="group">
                               
-                                <label  for="inlineFormCustomSelect">Preference</label>
+                                <label  for="inlineFormCustomSelect">Selected Area</label>
                                 <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
                                   <option selected>Choose...</option>
                                   <option value="1">One</option>
@@ -92,7 +92,7 @@
                         </div>
                         <fieldset class="pl-3 pr-3">
                             <div class="form-group">
-                                <label for="exampleFormControlTextarea1">Example textarea</label>
+                                <label for="exampleFormControlTextarea1">Address</label>
                                 <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
                               </div>
                         </fieldset>

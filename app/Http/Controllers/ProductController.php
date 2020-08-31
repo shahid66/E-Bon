@@ -2,8 +2,10 @@
 
 namespace App\Http\Controllers;
 
+use App\Lead;
 use App\Product;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 
 class ProductController extends Controller
 {
@@ -24,7 +26,7 @@ class ProductController extends Controller
      */
     public function create()
     {
-        //
+        return view('/admin/product/create');
     }
 
     /**
@@ -35,7 +37,21 @@ class ProductController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        //validation lead
+        $this->validate($request, [
+            'name'=>'required'
+        ]);
+
+        //create leads
+        $product = new Product();
+        $product->user_id = Auth::user()->id;
+        $product->name = $request->input('name');
+        $product->quantity = $request->input('quantity');
+        $product->description = $request->input('description');
+        if($product->save())
+            return 'success New Product Created Successfully';
+        else
+            return 'Oops!... Product Can not Created. Please try again.';
     }
 
     /**

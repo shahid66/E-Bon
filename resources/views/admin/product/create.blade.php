@@ -1,8 +1,8 @@
-@extends('adminView/include/layout')
+@extends('admin/include/layout')
 @section('content')
 <div class="col-lg-9 col-md-10 mx-auto">
     <h2>Insert Product</h2>
-    <form action="">
+    {!! Form::open(['action'=>'ProductController@store', 'method'=>'POST']) !!}
       <div class="control-group">
         <div class="form-group floating-label-form-group controls">
           <label>Product Name</label>
@@ -50,6 +50,6 @@
       </div>
       <br>
       <button type="submit" class="btn btn-primary mb-2" id="sendMessageButton">Submit</button>
-  </form>
+    {!! Form::close() !!}
 </div>
 @endsection

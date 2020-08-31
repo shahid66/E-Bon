@@ -31,6 +31,6 @@ class HomeController extends Controller
         elseif (Auth::user()->role == "operator")
             return redirect('/operator/');
         else
-            return view('/admin/index');
+            return redirect('/home');
     }
 }
